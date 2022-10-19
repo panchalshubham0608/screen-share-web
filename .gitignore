@@ -43,6 +43,7 @@ client/node_modules/
 server/node_modules/
 node_modules/
 jspm_packages/
+server/screenshot.jpg
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
