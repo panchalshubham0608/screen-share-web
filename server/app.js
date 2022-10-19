@@ -3,6 +3,7 @@ const cors = require('cors');
 const app = express();
 const http = require('http').createServer(app);
 const { screenshot } = require('./util');
+const path = require('path');
 
 // configurations
 const whitelist = [
@@ -15,6 +16,9 @@ const io = require('socket.io')(http, {
     }
 })
 app.use(cors());
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
 
 // setup routes
 app.get('/', (_, res) => {
