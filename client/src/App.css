@@ -1,0 +1,19 @@
+img {
+  width: 100vw !important;
+}
+
+.error {
+  padding: 20px;
+}
+
+.highlight {
+  background-color: #ededed;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 2px;
+}
+
+pre {
+  border: 1px solid black;
+  padding: 10px;
+}
