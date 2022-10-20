@@ -13,3 +13,10 @@ start:
 		npm install; \
 		npm start; \
 	fi
+
+.PHONY: serve
+serve:
+	@if ! serve -v; then \
+		npm install -g serve; \
+	fi
+	@serve -d build
