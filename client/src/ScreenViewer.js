@@ -70,7 +70,7 @@ export default function ScreenViewer(props) {
           <ul>
             <li>
               Make sure that you have set the correct server url? <br/>
-              Your current server url is <span class="highlight">{props.serverUrl}</span>
+              Your current server url is <span className="highlight">{props.serverUrl}</span>
             </li>
             <li>
               Make sure that your server is running.
