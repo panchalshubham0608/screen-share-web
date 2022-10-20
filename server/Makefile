@@ -8,9 +8,8 @@ clean:
 start: 
 	@echo "$(kill -9 $(lsof -t -i:8000))"
 	@echo "Starting client..."
-	@ if [ -d "node_modules" ]; then \
-		npm start; \
-	else \
+	@ if [ ! -d "node_modules" ]; then \
 		npm install; \
-		npm start; \
 	fi
+	@# Re-run server on crashes
+	@while true; do npm start; sleep 1; done
