@@ -20,7 +20,7 @@ module.exports.screenshot = () => new Promise((resolve, reject) => {
             }
         });
     } else {
-        screenshot(filename, function(error, complete) {
+        screenshot(filepath, function(error, complete) {
             if (error) {
                 reject(error);
             } else if (!complete) {
